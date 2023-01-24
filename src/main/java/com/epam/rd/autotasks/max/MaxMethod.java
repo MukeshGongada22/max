@@ -1,7 +1,8 @@
 package com.epam.rd.autotasks.max;
-
+import java.util.*;
 public class MaxMethod {
     public static int max(int[] values) {
-        throw new UnsupportedOperationException();
+        Arrays.sort(values);
+        return values[(values.length)-1];
     }
 }
